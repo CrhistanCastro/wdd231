@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="description" content="Home Page">
+    <meta name="author" content="Crhistan Castro">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/course.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/house-building.svg" alt="Site Logo" width="512" height="512">
+        <span>Crhistan Castro</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="card">
+            <h2>About Me</h2>
+            <p>My name is Crhistan. I'm from Dominican Republic and live in Santo Domingo. I love to eat. I'm working in the national health insurance and I'm studying a Bachelor's Degree in Software Development.</p>
+        </section>
+        <section class="card">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Me" width="200">
+        </section>
+        <section id="courses">
+            <h2>Web Certificate Courses</h2>
+            <div id="course-button">
+                <button id="all" class="all">All courses</button>
+                <button id="wdd" class="wdd">WDD courses</button>
+                <button id="cse" class="cse">CSE courses</button>
+            </div>
+            <div class="courses"> 
+            </div>
+            <p class="tcredits"></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/CrhistanCastro" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/crhistan-neftali-castro-melo-4907b0220?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnQ8HweufQ5yeCd8g4yVtPg%3D%3D" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/crhistancastro" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+        </div>
+        <p><span id="currentyear"></span> | Crhistan Castro Melo | Santo Domingo, Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

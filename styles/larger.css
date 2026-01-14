@@ -1,0 +1,40 @@
+@media only screen and (min-width: 38rem){
+    header,main,nav,footer{
+        margin: 0 auto;
+    }
+    .hamburger{
+        display: none;
+    }
+    header{
+        grid-template-columns: 24px auto;
+    }
+    .navigation{
+    display: block;
+    border-bottom: solid 1px #eee;
+    }
+    .navigation ul{
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--primary-color);
+    }
+    .navigation a{
+        border: none;
+        font-size: larger;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1rem;
+        align-items: start;
+    }
+    main h1 {
+        grid-column: 1/-1;
+    }
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #courses{
+        grid-column: 1/-1;
+    }
+}
