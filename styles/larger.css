@@ -37,4 +37,8 @@
     #courses{
         grid-column: 1/-1;
     }
+    #course-button{
+    display: flex;
+    justify-content: space-around;
+}
 }

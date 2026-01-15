@@ -11,11 +11,12 @@
 }
 body{
     font-family: var(--body-font);
+    overflow-x: hidden;
 }
 header {
     display: grid;
     grid-template-columns: 24px auto 44px;
-    padding: 5px 0 5px 10px;
+    padding: 5px 30px 5px 10px;
     align-items: end;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
@@ -32,11 +33,16 @@ header span{
     color: var(--primary-color);
 }
 .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     color: var(--primary-color);
     cursor: pointer;
     font-family: var(--body-font);
+    width: 44px;
+    height: 44px;
 }
 .hamburger::before{
     content: "\2630";
@@ -116,7 +122,6 @@ footer {
     display: flex;
     flex-direction: column;
     min-height: 320px;
-    max-height: 200px;
     background-color: rgb(245, 235, 235);
     padding: 1rem;
     border: 1px solid #ccc;
@@ -132,6 +137,7 @@ footer {
     height: auto;
     margin: 1rem;
     border-radius: 6px;
+    object-fit: cover;
 }
 section p {
     font-family: var(--body-font);
@@ -153,7 +159,8 @@ section p {
 }
 #course-button{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    
 }
 button {
     margin: 1rem;
