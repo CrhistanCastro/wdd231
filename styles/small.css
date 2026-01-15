@@ -163,15 +163,11 @@ section p {
 button {
     margin: 0.5rem;
     padding: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     font-size: larger;
     font-weight: bold;
     border-radius: 1rem;
     background-color: var(--secondary-color);
     color: white;
-    justify-content: space-around;
-    align-items: center;
 }
 .tcredits{
     margin: 1rem;
