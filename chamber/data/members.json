@@ -1,0 +1,116 @@
+{
+    "companies": [
+        {
+            "company_name": "Supermercados Bravo",
+            "company_address": {
+                "street": "Av. Winston Churchill 1452",
+                "city": "Santo Domingo",
+                "country": "Dominican Republic",
+                "zip_code": "10129"
+            },
+            "company_phone_number": "+1 809-530-1010",
+            "company_website_url": "http://www.superbravo.com.do/",
+            "image": {
+                "name": "Supermercados Bravo",
+                "url": "https://superbravo.com.do/wp-content/uploads/2017/06/BravoWeb.png"
+            },
+            "membership_level": 3
+        },
+        {
+            "company_name": "Banreservas",
+            "company_address": {
+                "street": "Av. José Contreras 184",
+                "city": "Santo Domingo",
+                "country": "Dominican Republic",
+                "zip_code": "10117"
+            },
+            "company_phone_number": "+1 809-960-3680",
+            "company_website_url": "http://www.banreservas.com/",
+            "image": {
+                "name": "Banreservas",
+                "url": "https://cdnebrpeastus.azureedge.net/banreservas/media/xxpfq31w/banreservas-logo.png"
+            },
+            "membership_level": 3
+        },
+        {
+            "company_name": "Farmacia GBC",
+            "company_address": {
+                "street": "Guarocuya 69",
+                "city": "Santo Domingo",
+                "country": "Dominican Republic",
+                "zip_code": "10146"
+            },
+            "company_phone_number": "+1 809-363-0990",
+            "company_website_url": "http://www.farmaciamedicargbc.com/",
+            "image": {
+                "name": "Farmacia GBC",
+                "url": "https://farmaciamedicargbc.com/wp-content/uploads/2022/02/Logo-medicarbgc-new.png"
+            },
+            "membership_level": 2
+        },
+        {
+            "company_name": "Ferretería Cima",
+            "company_address": {
+                "street": "Av. José Núñez de Cáceres 19",
+                "city": "Santo Domingo",
+                "country": "Dominican Republic",
+                "zip_code": "10104"
+            },
+            "company_phone_number": "+1 809-565-9743",
+            "company_website_url": "https://ferreteriacima.com.do/",
+            "image": {
+                "name": "Ferretería Cima",
+                "url": "https://ferreteriacima.com.do/cdn/shop/files/Logo-FCIMA-dos-tonospngwhite_140x@2x.png?v=1613747223"
+            },
+            "membership_level": 1
+        },
+        {
+            "company_name": "Almacenes Unidos S.A.S.",
+            "company_address": {
+                "street": "Av. Sarasota 102",
+                "city": "Santo Domingo",
+                "country": "Dominican Republic",
+                "zip_code": "10112"
+            },
+            "company_phone_number": "+1 809-472-6911",
+            "company_website_url": "https://www.unidosrd.com/",
+            "image": {
+                "name": "Almacenes Unidos S.A.S.",
+                "url": "https://static.wixstatic.com/media/56035b_9eef796a549742339a2ce9d7bba2c4c2~mv2.png/v1/fill/w_196,h_68,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/56035b_9eef796a549742339a2ce9d7bba2c4c2~mv2.png"
+            },
+            "membership_level": 1
+        },
+        {
+            "company_name": "Sheraton",
+            "company_address": {
+                "street": "Av. George Washington 365",
+                "city": "Santo Domingo",
+                "country": "Dominican Republic",
+                "zip_code": "10205"
+            },
+            "company_phone_number": "+1 809-221-6666",
+            "company_website_url": "https://www.marriott.com/en-us/hotels/sdqds-sheraton-santo-domingo-hotel/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0",
+            "image": {
+                "name": "Sheraton",
+                "url": "https://cache.marriott.com/content/dam/marriott-digital/si/global-property-shared/en_us/logo/assets/si_logo_L.png"
+            },
+            "membership_level": 2
+        },
+        {
+            "company_name": "Alorica Inc",
+            "company_address": {
+                "street": "C. Juan Baron Fajardo 269",
+                "city": "Santo Domingo",
+                "country": "Dominican Republic",
+                "zip_code": "10150"
+            },
+            "company_phone_number": "+1 809-985-0000",
+            "company_website_url": "http://www.alorica.com/",
+            "image": {
+                "name": "Alorica Inc",
+                "url": "https://www.alorica.com/images/default-source/alorica/website2-0__header-logo.svg?sfvrsn=54b0b15c_0"
+            },
+            "membership_level": 2
+        }
+    ]
+}
