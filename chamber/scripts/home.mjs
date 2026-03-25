@@ -64,12 +64,10 @@ function displaySpotlights(companies) {
     });
 }
 
-const place = document.querySelector('#place');
 const description = document.querySelector('#description');
 const currentTemp = document.querySelector('#temperature');
 const icon = document.querySelector('#icon');
 const forecast = document.querySelector('#forecast');
-const sd = "Santo Domingo";
 
 const theKey = "41e49e1b595c9d3e96046ef337c2655a";
 const lat = "18.4572";
@@ -94,7 +92,6 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    place.textContent = sd;
     description.innerHTML = data.weather[0].description;
     currentTemp.innerHTML = `${data.main.temp}&deg C`;
     const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
