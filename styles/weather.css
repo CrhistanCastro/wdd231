@@ -1,0 +1,17 @@
+    .cards {
+        border: 1px solid #5d6f67;
+        background-color: #ffff;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .cards h2{
+        margin: .3rem 0;
+    }
+    .cards #description {
+        text-transform: capitalize;
+        margin: .3rem 0;
+    }
+    .cards #current-temp {
+        font-size: 2rem;
+        margin: .3rem 0;
+    }

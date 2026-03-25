@@ -40,7 +40,16 @@
         text-align: center;
         gap: 1rem;
     }
-    
+    .top3 div {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem;
+    }
+    .spotlight div{
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem;
+    }
     
 }
 

@@ -86,7 +86,7 @@
     .social a:hover{
         background-color: black;
     }
-    h2 {
+    .directory h2 {
         font-family: var(--heading-font);
         color: white;
         margin: 1rem 0;
@@ -124,7 +124,7 @@
         border-bottom: 1px solid #ccc;
         padding: 1rem 0;
     }
-    section {
+    .directory section {
         margin: 0.5rem;
         padding: 0.5rem;
         background-color: var(--secondary-color);
@@ -133,11 +133,11 @@
         text-align: center;
         align-items: center;
     }
-    section p, section a {
+    .directory section p, .directory section a {
         color: #fff;
         font-family: var(--body-font);
     }
-    section img{
+    .directory section img{
         display: block;
         margin: 0 auto;
         background-color:black;
@@ -145,6 +145,112 @@
     #cards {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+   .hero {
+        position: relative;
+        overflow-x: hidden;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .cta {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background-color: var(--secondary-color);
+        padding: 10px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: var(--heading-font);
+        font-size: xx-large;
+    }
+    .cta:hover{
+        border-bottom: 1px solid white;
+    }
+    .home h1 {
+        font-family: var(--heading-font);
+    }
+    .top3 {
+        display: grid;
+        font-family: var(--body-font);
+        text-align: center;
+        color: white;
+        gap: 1rem; 
+        margin: 10px 10px;
+        margin-bottom: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .top3 div {
+        background-color: var(--secondary-color); 
+        text-align: center;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+    .top3 h2{
+        background-color: var(--primary-color);
+        font-family: var(--heading-font);
+        color: white;
+        padding: 0.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    .top3 p{
+        padding: 0.5rem;
+    }
+    .events ul {
+        padding: 0.5rem 1rem;
+    }
+    .events li {
+        margin: 1rem;
+        font-size: x-large;
+    }
+    .weather #description {
+        text-transform: capitalize;
+        font-size: large;
+    }
+    .weather #temperature {
+        font-size: 2rem;
+    }
+    #forecast {
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-size: large;
+    }
+    .spotlight {
+        display: grid;
+        gap: 1rem;
+        color: white;
+        text-align: center;
+        font-family: var(--body-font);
+        margin: 10px 10px;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .spotlight div {
+        background-color: var(--secondary-color); 
+        border-radius: 10px;
+        border: 5px solid black;
+    }
+    .spotlight h2 {
+        font-family: var(--heading-font);
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .spotlight img {
+        display: block;
+        margin: 0 auto;
+        background-color:black;
+    }
+    .spotlight p {
+        padding: 0.5rem;
+    }
+    .spotlight a{
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid white;
     }
     footer {
         display: flex;
