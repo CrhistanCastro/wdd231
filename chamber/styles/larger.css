@@ -206,7 +206,7 @@
         margin: 1rem;
         font-size: x-large;
     }
-    .weather #description {
+    .weather p {
         text-transform: capitalize;
         font-size: large;
     }

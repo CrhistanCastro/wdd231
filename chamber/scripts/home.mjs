@@ -64,9 +64,8 @@ function displaySpotlights(companies) {
     });
 }
 
-const description = document.querySelector('#description');
+const description = document.createElement('p');
 const currentTemp = document.querySelector('#temperature');
-const icon = document.querySelector('#icon');
 const forecast = document.querySelector('#forecast');
 
 const theKey = "41e49e1b595c9d3e96046ef337c2655a";
@@ -94,9 +93,14 @@ async function apiFetch() {
 function displayResults(data) {
     description.innerHTML = data.weather[0].description;
     currentTemp.innerHTML = `${data.main.temp}&deg C`;
+    let we = document.querySelector(".weather");
+    let icon = document.createElement("img");
     const iconSRC = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     icon.setAttribute('src', iconSRC);
-    icon.setAttribute('alt', data.weather[0].description);   
+    icon.setAttribute('alt', data.weather[0].description);
+    we.appendChild(icon);
+    we.appendChild(description);
+    
 }
 
 async function forecastFetch() {
