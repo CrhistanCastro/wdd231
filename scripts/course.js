@@ -99,7 +99,10 @@ function courseCard(filterCourses) {
         coursesC.appendChild(card);
 
         total += course.credits;
-        
+        coursesC.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+     
     });
 
     totalCredits.textContent=`The total credits for courses listed above is ${total}`
@@ -117,3 +120,26 @@ const cseButton = document.querySelector('.cse');
 cseButton.addEventListener('click', () => {
     courseCard(courses.filter(cse => cse.subject === 'CSE'));
 });
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+  
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+    
+}
+
