@@ -46,6 +46,12 @@
         .navigation{
             display: block;
         }
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        
     }
     .navigation a{
         padding: 0.3rem 0.5rem;
@@ -264,4 +270,118 @@
     }
     .project {
         font-family: var(--heading-font);
+    }
+    
+    form {
+        background-color: var(--secondary-color);
+        color: white;
+        max-width: 700px;
+        margin: 0;
+        padding: 2rem;
+        border-radius: 8px;
+    }
+    .form input {
+        width: 100%;
+        padding: 0.4rem;
+    }
+    .membershiplevel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .membership {
+        border: 1px solid #999;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        background: #eee;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.8s ease forwards;
+        width: 100%;
+        max-width: 350px;
+    }
+    .membership:nth-child(2) { animation-delay: 0.2s; }
+    .membership:nth-child(3) { animation-delay: 0.4s; }
+    .membership:nth-child(4) { animation-delay: 0.6s; }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .membership button {
+        margin-top: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        cursor: pointer;
+    }
+
+    dialog {
+        border-radius: 10px;
+        padding: 5rem;
+        justify-self: center;
+        align-self: center;
+        font-size: xx-large;
+    }
+    ::backdrop {
+        background-color: #07597d5f;
+    }
+    
+    .thankyou {
+        padding: 1rem;
+        text-align: center;
+        font-size: large;
+        padding-bottom: 13.2rem;
+    }
+    
+
+    #results {
+        margin-top: 1rem;
+        background-color: #eee;
+        font-size: larger;
+        padding: 1rem;
+        border-radius: 10px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    label {
+        font-family: var(--heading-font);
+        font-size: large;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    .join h1, .join h2, .join h3 {
+        font-family: var(--heading-font);
+        text-align: center;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+        width: 100%;
+    }
+    input[type="submit"] {
+        margin-top: 1.5rem;
+        padding: 0.8rem;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover{
+        background-color: green;
+    }
+    .radio {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        
     }
