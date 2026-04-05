@@ -1,0 +1,63 @@
+@media only screen and (max-width: 500px){
+    .hamburger {
+        display: block !important;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+    }
+    .hamburger::before{
+        content: "\2630";
+    }
+    .hamburger.show::before {
+        content: "\00D7";
+    }
+    .navigation {
+        display: block;
+    }
+    .navigation.show{
+        display: flex;
+    }
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color);
+    }
+    .navigation a{
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+    .directory-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .top3 div {
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem;
+    }
+    .spotlight div{
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 1rem;
+    }
+    
+    .membership {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .membershiplevel {
+        align-items: center;
+    }
+}
+

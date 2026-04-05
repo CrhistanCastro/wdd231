@@ -1,0 +1,387 @@
+    :root {
+        --primary-color: #134074;
+        --secondary-color: #453823;
+        --heading-font: "Oswald", sans-serif;
+        --body-font: "Outfit", sans-serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: var(--body-font);
+        overflow-x: hidden;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--primary-color);
+        color: white;
+        font-family: var(--heading-font);
+        padding: 0.5rem 1.5rem;
+        align-items: center;
+    }
+    .logo img {
+        display: block;
+        width: 30px;
+        height: auto;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.2rem;
+        gap: 0.5rem;
+    }
+    .hamburger{
+        display: none;
+    }
+    .navigation {
+        display: none;
+    }
+    .navigation.show{
+        display: block;
+    }
+    @media(min-width: 501px){
+        .navigation{
+            display: block;
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+        }
+        
+    }
+    .navigation a{
+        padding: 0.3rem 0.5rem;
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+    .navigation ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        gap: 1.5rem;
+    }
+    .navigation li.current a{
+        background-color: var(--secondary-color);
+    }
+    .navigation li a:hover {
+        background-color: rgb(127, 30, 30);
+    }
+    .social{
+        display: flex;
+        justify-content: center;
+        column-gap: 8px;
+    }
+    .social a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        border: rgb(250, 222, 65) solid 1px;
+        border-radius: 22px;
+    }
+    .social img{
+        width: 30px;
+        height: 30px;
+    }
+    .social a:hover{
+        background-color: black;
+    }
+    .directory h2 {
+        font-family: var(--heading-font);
+        color: white;
+        margin: 1rem 0;
+        text-shadow: 0 0 30px #111;
+    }
+
+    .directory-header {
+        display: flex;
+        font-family: var(--heading-font);
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem;
+    }
+    .view-buttons button {
+        font-size: 1.2rem;
+        padding: 0.3rem 0.6rem;
+        margin-left: 5px;
+        cursor: pointer;
+        background-color: #96abf2;
+    }
+    #cards.grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+    }
+    #cards.list {
+        display: block;
+    }
+    #cards.list img {
+        display: none;
+    }
+    #cards.list section {
+        display: block;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+        padding: 1rem 0;
+    }
+    .directory section {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        background-color: var(--secondary-color);
+        border: 5px solid black;
+        display: grid;
+        text-align: center;
+        align-items: center;
+    }
+    .directory section p, .directory section a {
+        color: #fff;
+        font-family: var(--body-font);
+    }
+    .directory section img{
+        display: block;
+        margin: 0 auto;
+        background-color:black;
+    }
+    #cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+   .hero {
+        position: relative;
+        overflow-x: hidden;
+    }
+    .hero img {
+        width: 100%;
+        height: auto;
+    }
+    .cta {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        background-color: var(--secondary-color);
+        padding: 10px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: white;
+        font-family: var(--heading-font);
+        font-size: xx-large;
+    }
+    .cta:hover{
+        border-bottom: 1px solid white;
+    }
+    .home h1 {
+        font-family: var(--heading-font);
+    }
+    .top3 {
+        display: grid;
+        font-family: var(--body-font);
+        text-align: center;
+        color: white;
+        gap: 1rem; 
+        margin: 10px 10px;
+        margin-bottom: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .top3 div {
+        background-color: var(--secondary-color); 
+        text-align: center;
+        padding: 0;
+        margin-top: 0.5rem;
+    }
+    .top3 h2{
+        background-color: var(--primary-color);
+        font-family: var(--heading-font);
+        color: white;
+        padding: 0.5rem;
+        margin: 0;
+        text-align: center;
+    }
+    .top3 p{
+        padding: 0.5rem;
+    }
+    .events ul {
+        padding: 0.5rem 1rem;
+    }
+    .events li {
+        margin: 1rem;
+        font-size: x-large;
+    }
+    .weather p {
+        text-transform: capitalize;
+        font-size: large;
+    }
+    .weather #temperature {
+        font-size: 2rem;
+    }
+    #forecast {
+        display: flex;
+        color: white;
+        justify-content: center;
+        font-size: large;
+    }
+    .spotlight {
+        display: grid;
+        gap: 1rem;
+        color: white;
+        text-align: center;
+        font-family: var(--body-font);
+        margin: 10px 10px;
+        margin-bottom: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .spotlight div {
+        background-color: var(--secondary-color); 
+        border-radius: 10px;
+        border: 5px solid black;
+    }
+    .spotlight h2 {
+        font-family: var(--heading-font);
+        padding: 0.5rem;
+        text-align: center;
+    }
+    .spotlight img {
+        display: block;
+        margin: 0 auto;
+        background-color:black;
+    }
+    .spotlight p {
+        padding: 0.5rem;
+    }
+    .spotlight a{
+        text-decoration: none;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    footer {
+        display: flex;
+        justify-content: space-around;
+        background-color: var(--primary-color);
+        color: white;
+        font-family: var(--body-font);
+        text-align: center;
+        padding: 1rem 10px;
+        font-size: large;
+    }
+    .project {
+        font-family: var(--heading-font);
+    }
+    
+    form {
+        background-color: var(--secondary-color);
+        color: white;
+        max-width: 700px;
+        margin: 0;
+        padding: 2rem;
+        border-radius: 8px;
+    }
+    .form input {
+        width: 100%;
+        padding: 0.4rem;
+    }
+    .membershiplevel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .membership {
+        border: 1px solid #999;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        background: #eee;
+        text-align: center;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.8s ease forwards;
+        width: 100%;
+        max-width: 350px;
+    }
+    .membership:nth-child(2) { animation-delay: 0.2s; }
+    .membership:nth-child(3) { animation-delay: 0.4s; }
+    .membership:nth-child(4) { animation-delay: 0.6s; }
+
+    @keyframes fadeUp {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .membership button {
+        margin-top: 0.5rem;
+        padding: 0.3rem 0.6rem;
+        cursor: pointer;
+    }
+
+    dialog {
+        border-radius: 10px;
+        padding: 5rem;
+        justify-self: center;
+        align-self: center;
+        font-size: xx-large;
+    }
+    ::backdrop {
+        background-color: #07597d5f;
+    }
+    
+    .thankyou {
+        padding: 1rem;
+        text-align: center;
+        font-size: large;
+        padding-bottom: 13.2rem;
+    }
+    
+
+    #results {
+        margin-top: 1rem;
+        background-color: #eee;
+        font-size: larger;
+        padding: 1rem;
+        border-radius: 10px;
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+    }
+    label {
+        font-family: var(--heading-font);
+        font-size: large;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 0.3rem;
+    }
+    .join h1, .join h2, .join h3 {
+        font-family: var(--heading-font);
+        text-align: center;
+    }
+    textarea {
+        resize: vertical;
+        min-height: 100px;
+        width: 100%;
+    }
+    input[type="submit"] {
+        margin-top: 1.5rem;
+        padding: 0.8rem;
+        background-color: var(--primary-color);
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover{
+        background-color: green;
+    }
+    .radio {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        
+    }
