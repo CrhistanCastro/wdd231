@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon.ico">
-    <title>Santo Domingo Chamber of Commerce | Directory</title>
+    <title>Santo Domingo Chamber of Commerce | Discover</title>
     <meta name="author" content="Crhistan Castro">
     <meta name="description" content="Explore the best local businesses in Santo Domingo">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/discover.mjs"></script>
     <script defer src="scripts/date.js"></script>
     <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/directory.js"></script>
     <meta property="og:title" content="Santo Domingo Chamber of Commerce">
     <meta property="og:description" content="Explore the best local businesses in Santo Domingo.">
     <meta property="og:image" content="https://crhistancastro.github.io/wdd231/chamber/images/dominicanflag.svg">
-    <meta property="og:url" content="https://crhistancastro.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://crhistancastro.github.io/wdd231/chamber/index.html">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@100&display=swap" rel="stylesheet">
@@ -31,22 +31,14 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li class="current"><a href="discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
-    <main class="directory">
-        <div class="directory-header">
-            <h1>Business Directory</h1>
-
-            <div class="view-buttons">
-                <button id="grid">🔳</button>
-                <button id="list">📄</button>
-            </div>
-        </div>
-        <div id="cards" class="grid"></div>
+    <main  id="message">
+        <div id="discover"></div>
     </main>
     <footer>
         <div class="info">

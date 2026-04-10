@@ -1,4 +1,4 @@
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 640px){
     .hamburger {
         display: block !important;
         background: none;
@@ -58,6 +58,14 @@
 
     .membershiplevel {
         align-items: center;
+    }
+    #discover div {
+        grid-template-areas: 
+        "name"
+        "photo"
+        "description"
+        "location"
+        "button";
     }
 }
 

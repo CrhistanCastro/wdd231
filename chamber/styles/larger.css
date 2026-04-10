@@ -42,7 +42,7 @@
     .navigation.show{
         display: block;
     }
-    @media(min-width: 501px){
+    @media(min-width: 641px){
         .navigation{
             display: block;
         }
@@ -51,7 +51,17 @@
             grid-template-columns: 2fr 1fr;
             gap: 2rem;
         }
-        
+        #discover div {
+            
+        grid-template-areas: 
+        "name name"
+        "photo description"
+        "photo location"
+        "button button";
+        }
+        #discover div img:hover{
+            box-shadow: 0 0 50px #05d0ef;
+        }
     }
     .navigation a{
         padding: 0.3rem 0.5rem;
@@ -98,7 +108,6 @@
         margin: 1rem 0;
         text-shadow: 0 0 30px #111;
     }
-
     .directory-header {
         display: flex;
         font-family: var(--heading-font);
@@ -270,8 +279,7 @@
     }
     .project {
         font-family: var(--heading-font);
-    }
-    
+    }   
     form {
         background-color: var(--secondary-color);
         color: white;
@@ -290,7 +298,6 @@
         align-items: center;
         gap: 1rem;
     }
-
     .membership {
         border: 1px solid #999;
         border-radius: 10px;
@@ -307,20 +314,17 @@
     .membership:nth-child(2) { animation-delay: 0.2s; }
     .membership:nth-child(3) { animation-delay: 0.4s; }
     .membership:nth-child(4) { animation-delay: 0.6s; }
-
     @keyframes fadeUp {
         to {
             opacity: 1;
             transform: translateY(0);
         }
     }
-
     .membership button {
         margin-top: 0.5rem;
         padding: 0.3rem 0.6rem;
         cursor: pointer;
     }
-
     dialog {
         border-radius: 10px;
         padding: 5rem;
@@ -330,16 +334,13 @@
     }
     ::backdrop {
         background-color: #07597d5f;
-    }
-    
+    }   
     .thankyou {
         padding: 1rem;
         text-align: center;
         font-size: large;
         padding-bottom: 13.2rem;
     }
-    
-
     #results {
         margin-top: 1rem;
         background-color: #eee;
@@ -384,4 +385,50 @@
         justify-content: space-between;
         align-content: center;
         
+    }
+    #message h1{
+        text-align: center;
+        font-family: var(--heading-font);
+    }
+    #discover div {
+        margin: 10px;
+        border: 1px solid #999;
+        background-color: var(--secondary-color);
+        color: white;
+        border-radius: 8px;
+        overflow: hidden;
+        display: grid;
+    }
+    #discover div h2 {
+        margin: 1rem;
+        font-family: var(--heading-font);
+        grid-area: name;
+    }
+    #discover div img {
+        width: 100%;
+        grid-area: photo;
+    }
+    #discover div p {
+        margin: 5px;
+        font-family: var(--body-font);
+        grid-area: description;
+    }
+    #discover div address {
+        margin: 5px;
+        grid-area: location;
+        font-style: italic;
+    }
+    #discover div button {
+        grid-area: button;
+        margin: 1rem;
+        border-radius: 10px;
+        background-color: var(--primary-color);
+        color: white;
+        font-size: large;
+    }
+    @media only screen and (min-width: 1025px) {
+        #discover {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     }
