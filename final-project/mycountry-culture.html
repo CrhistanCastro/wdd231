@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon.ico">
+    <title>Dominican Republic Culture Page</title>
+    <meta name="author" content="Crhistan Castro">
+    <meta name="description" content="A page about the culture of the Dominican Republic">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <script src="scripts/mycountry.mjs" type="module"></script>
+    <script src="scripts/dialog.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Outfit:wght@100&display=swap" rel="stylesheet">
+    <meta property="og:title" content="Dominican Republic Page">
+    <meta property="og:description" content="A page about the Dominican Republic">
+    <meta property="og:image" content="https://crhistancastro.github.io/wdd231/final-project/images/dominicanflag.svg">
+    <meta property="og:url" content="https://crhistancastro.github.io/wdd231/final-project/index.html">
+</head>
+<body class="culture-b">
+    <header>
+        <h1>Dominican Republic Page</h1>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="mycountry-culture.html">Culture</a></li>
+                <li><a href="mycountry-gastro.html">Gastronomy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="culture-m">
+        <h2>Culture of the Dominican Republic</h2>
+        <p class="p">The Dominican Republic is a country rich in history and culture, a product of the fusion of Spanish, African, and Taino cultures. This fusion is evident in Dominican cultural expressions, most notably in its music and cuisine.</p>
+        <section class="music">
+            <h3>Music</h3>
+            <div class="music-c">
+                <p>Merengue is a musical and dance style originating in the Dominican Republic in the late 19th century. The basic instrumental structure of the merengue típico ensemble synthesizes the three cultures that make up the idiosyncrasy of Dominican culture. The European influence is represented by the accordion, the African by the tambora, and the Taíno by the güira.</p>
+                <p>Bachata is another internationally acclaimed musical genre that originated in the Dominican Republic. Although it emerged in the first half of the 20th century, bachata didn't become popular until the 1990s. It is now danced all over the world.</p>
+                <img src="images/Cultura-1.webp" alt="Dance" width="200" loading="lazy">
+            </div>
+        </section>
+        <section class="art">
+            <h3>Art</h3>
+            <p>Dominican art comprises all the visual arts and plastic arts made in Dominican Republic. Since ancient times, various groups have inhabited the island of Ayíti/Quisqueya (the indigenous names of the island), or Hispaniola (the name the Spanish gave to the island); the history of the country's art is generally compartmentalized into three periods: pre-Hispanic or aboriginal Amerindian (500 BC to 1500 AD), Hispanic or colonial (1502 to 1821 AD), and the national or Dominican period (1844 to present day).</p>
+            <div class="ima">
+                <img src="images/zemi-cohoba-stand.webp" alt="Zemi Cohoba Stand" title="Zemi Cohoba Stand" width="200" loading="lazy">
+                <img src="images/The_Virgin_of_Cristóbal_Colón_-_Google_Art_Project(3).webp" alt="The Virgin of Cristobal Colon" title="The Virgin of Cristobal Colon" width="200" loading="lazy">
+                <img src="images/Candido_Bido_Morning_Walk.webp" alt="Candido Bido-Morning Walk" title="Candido Bido-Morning Walk" width="200" loading="lazy">
+            </div>
+        </section>
+        <section class="sport">
+            <h3>Sport</h3>
+            <div class="sport-c">
+                <p>Sports in the Dominican Republic are dominated by baseball, considered the national sport and an integral part of its culture, but basketball, volleyball, and soccer are also very popular. The Dominican Republic is a world power in baseball, with numerous players in the MLB, and its athletes also excel in international competitions in other disciplines such as track and field, boxing, and volleyball.</p>
+                <img src="images/copia-de-copia-de-mangu-power.webp" alt="sports" width="200" loading="lazy">
+            </div>
+        </section>
+        <div class="feed">
+            <button id="openFeed">Write your feedback here!</button>
+        </div>
+        <dialog id="feed">
+            <button id="closeFeed">X</button>
+            <section class="form">
+            <h3>Feedback</h3>
+            <form method="get" id="feedbackForm" action="feedback.html">
+                <label for="fName" class="text">Full Name* <input type="text" name="fName" id="fName" required></label>
+                <label for="email" class="email">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label for="feedback">Questions or Suggestions</label>
+                <textarea name="feedback" id="feedback"></textarea>
+                <input type="submit" value="Send Feedback">
+            </form>
+        </section>
+        </dialog>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/CrhistanCastro" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/crhistan-neftali-castro-melo-4907b0220?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnQ8HweufQ5yeCd8g4yVtPg%3D%3D" target="_blank"><img src="images/linkedin.svg" alt="LinkedIn" width="16" height="16"></a>
+            <a href="https://www.instagram.com/crhistancastro" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+        </div>
+        <div>
+            <p><span id="currentyear"></span> | Crhistan Castro Melo | Santo Domingo, Dominican Republic</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

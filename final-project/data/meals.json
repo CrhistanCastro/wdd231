@@ -1,0 +1,34 @@
+{
+    "meals": [
+        {
+            "mealName": "La Bandera",
+            "ingredients": "White rice with stewed Chicken, stewed beans and salad",
+            "imageUrl": "https://tuguiadominicana.com/wp-content/uploads/2023/03/ARROZ-ABICHUELA-CARNE-@eltipicodominicano-1024x582.png"
+        },
+        {
+            "mealName": "Sancocho",
+            "ingredients": "A soup with yuca, pumpkin, yautia, yam, plantain, and stewed meat and pork",
+            "imageUrl": "https://www.dominicancooking.com/wp-content/uploads/how-to-make-sancocho-step-by-step-6.jpg"
+        },
+        {
+            "mealName": "Mangu",
+            "ingredients": "Mashed plantain accompanied by egg, cheese or salami",
+            "imageUrl": "https://www.crumbsnatched.com/wp-content/uploads/2025/01/dominican-breakfast-mangu-tres-golpes-featured-480x270.jpg"
+        },
+        {
+            "mealName": "Niño Envuelto",
+            "ingredients": "Rice with ground beef wrapped in cabbage",
+            "imageUrl": "https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/file-uploads/blogs/2147718531/images/53e8c-cb15-5128-7356-137640a8c3e_00ab3b5d-aa76-499e-9686-9fdd47cf16fc.jpg"
+        },
+        {
+            "mealName": "Habichuelas con Dulce",
+            "ingredients": "A semi-liquid cream of beans,sweetened, flavored with cinnamon and other spices, and garnished with milk cookies or cassava bread on top. Coconut milk, evaporated milk, raisins, and sweet potato are also added to give it a creamy texture.",
+            "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Habichuelas_con_dulce_dominicana.jpg/500px-Habichuelas_con_dulce_dominicana.jpg"
+        },
+        {
+            "mealName": "Casabe",
+            "ingredients": "Unleavened, crispy, thin, circular bread made from cassava flour",
+            "imageUrl": "https://cuban.recipes/wp-content/uploads/2019/11/casabe.jpg"
+        }
+    ]
+}

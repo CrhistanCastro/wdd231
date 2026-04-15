@@ -1,0 +1,381 @@
+:root {
+    --primary-color: #002D62;
+    --secondary-color: #CE1126;
+    --heading-font: "Oswald", sans-serif;
+    --body-font: "Outfit", sans-serif;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 2rem 2rem;
+}
+.hamburger{
+    display: none;
+}
+.navigation {
+    display: none;
+    align-content: center;
+}
+.navigation.show{
+    display: block;
+}
+@media(min-width: 641px){
+    .navigation{
+        display: block;
+    }
+    main img:hover {
+        box-shadow: 0 0 50px #05d0ef;
+    }
+}
+.navigation a{
+    padding: 1rem 1rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.navigation ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+.navigation li.current a{
+    background-color: #453823;
+}
+.navigation li a:hover {
+    background-color: rgb(127, 30, 30);
+}
+.home-b {
+    font-family: var(--body-font);
+    font-size: larger;
+    background-color: var(--secondary-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.home-m {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.data, .about {
+    background-color: white;
+    color: black;
+    padding: 1.5rem;
+    border-radius: 10px;  
+    display: flex; 
+    flex-direction: column;
+    width: 65%;
+    max-width: 900px;
+    margin-bottom: 1rem;
+}
+.about{
+    align-self: flex-start;
+}
+.data{
+    align-self: flex-end;
+}
+.about h2, .data h2{
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.about-cont img, .data-cont img{
+    width: 40%;
+    margin: 0 auto 1rem;
+}
+.about p{
+    font-size: larger;
+    text-align: justify;
+}
+.about-cont, .data-cont{
+    display: flex;
+    align-items: center;
+    gap: 2rem;   
+}
+.data-cont table{
+    font-size: larger;
+}
+.data-cont td{
+    padding: 0.4rem;
+}
+.data-cont td:first-child {
+    font-weight: bold;
+    text-align: left;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--heading-font);
+    text-align: center;
+    padding: 1rem 10px;
+    font-size: large;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+.social a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: rgb(250, 222, 65) solid 1px;
+    border-radius: 22px;
+}
+.social img{
+    width: 22px;
+    height: 22px;
+}
+.social a:hover{
+    background-color: black;
+}
+.gastro-b {
+    background-color: var(--secondary-color);
+}
+.gastro-m h2, .gastro-m p{
+    color: white;
+}
+.gastro-m h2{
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.gastro-m p{
+    font-family: var(--body-font);
+    text-align: justify;
+    font-size: x-large;
+}
+.gastro-m {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+@media only screen and (min-width: 1025px) {
+    .img-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .navigation a{
+        font-size: 1.5rem;
+    }
+}
+.img-grid div {
+    margin: 10px;
+    border: 1px solid #999;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+    "name name"
+    "img description";
+}
+.img-grid img {
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: auto;
+    grid-area: img;
+}
+.img-grid h3 {
+    font-family: var(--heading-font);
+    margin: 1rem;
+    text-align: center;
+    grid-area: name;
+}
+.img-grid p {
+    font-family: var(--body-font);
+    margin: 10px;
+    font-size: large;
+    color: black;
+    grid-area: description;
+}
+.culture-b {
+    background-color: var(--secondary-color);
+}
+.culture-b h2{
+    color: white;
+    text-align: center;
+    font-family: var(--heading-font);
+    margin: 1rem;
+    font-size: xx-large;
+}
+.p {
+    color: white;
+    text-align: center;
+    font-family: var(--body-font);
+    margin: 1rem;
+    font-size: x-large;
+}
+label {
+    font-size: large;
+    font-family: var(--heading-font);
+    margin: 1rem;
+}
+input {
+    padding: 0.4rem;
+    font-size: 1rem;
+    width: 100%;
+}
+textarea {
+    margin: 1rem;
+    min-height: 100px;
+    resize: vertical;
+}
+form {
+    width: 500px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: rgb(231, 228, 228);
+    display: grid;
+    margin-bottom: 2rem;
+}
+input[type="submit"] {
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: green;
+}
+.feed {
+    justify-self: center;
+}
+.feed button {
+    margin: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 10px;
+}
+.feed button:hover {
+    background-color: #453823;
+}
+dialog {
+    border-radius: 10px;
+    padding: 2rem;
+    justify-self: center;
+    align-self: center;
+    font-size: xx-large;
+}
+dialog button {
+    padding: 0.3rem;
+    color: var(--secondary-color);
+    border-radius: 50px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    cursor: pointer;
+}
+::backdrop {
+    background-color: rgba(127, 225, 255, 0.344);
+}
+.feedback {
+    padding: 1rem;
+    text-align: center;
+    font-size: large;
+    padding-bottom: 13.2rem;
+}
+.feedback h1 {
+    font-family: var(--heading-font);
+}
+#feedbacks {
+    margin: 1rem;
+    background-color: #eee;
+    font-size: larger;
+    justify-self: center;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: 500px;
+    text-align: left;
+}
+.music, .art, .sport {
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 10px;  
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.music h3, .art h3, .sport h3{
+    font-family: var(--heading-font);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.music p, .art p, .sport p{
+    font-size: larger;
+    text-align: justify;
+    margin-bottom: 1rem;
+    font-family: var(--body-font);
+}
+.music img, .sport img{
+    max-width: 100%;
+    height: auto;
+}
+.music-c, .sport-c{
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
+}
+.ima{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.form h3 {
+    text-align: center;
+    font-family: var(--heading-font);
+    color: black;
+    font-size: x-large;
+    margin: 1rem;
+}
+.culture-m section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.refer {
+    text-align: center;
+    line-height: 2rem;
+    padding: 1rem;
+    margin: 2rem;
+}
+.refer h1{
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--heading-font);
+}
+.ref a{
+    
+    color: white;
+}

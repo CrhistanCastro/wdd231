@@ -1,0 +1,129 @@
+@media screen and (max-width:640px) {
+    .hamburger {
+        display: block !important;
+        background: none;
+        border: none;
+        color: white;
+        cursor: pointer;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+    .hamburger::before{
+        content: "\2630";
+    }
+    .hamburger.show::before {
+        content: "\00D7";
+    }
+    .navigation {
+        display: none;
+    }
+    .navigation.show{
+        display: flex;
+    }
+    .navigation ul {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--primary-color);
+    }
+    .navigation a{
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #ddd;
+    }
+    .home-m {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    .about, .data{
+        padding: 1rem;
+        width: 100%;
+        flex-direction: column;
+        max-width: 480px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .about-cont, .data-cont{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        width: 100%;
+    }
+    .about h2, .data h2{
+        text-align: center;
+    }
+    .about img, .data img{
+        width: 40%;
+        max-width: 180px;
+        object-fit: cover;
+    }
+    .data table, .about p{
+        font-size: large;
+        width: 60%;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+    .img-grid img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    .p {
+        font-size: 1.2rem;
+    }
+    .culture-m h2{
+        font-size: 1.8rem;
+    }
+    .music-c, .ima, .sport-c{
+        display: block;
+        text-align: center;
+    }
+    .music-c img, .sport-c img{
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+    .ima img{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    form{
+        width: 100%;
+        padding: 1rem;
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+    input,textarea{
+        font-size: 1rem;
+        padding: 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    textarea{
+        resize: vertical;
+        min-height: 120px;
+    }
+    input[type="submit"]{
+        font-size: 1rem;
+        padding: 1rem;
+        box-sizing: border-box;
+        width: 100%;
+        cursor: pointer;
+    }
+}
